@@ -1,16 +1,17 @@
-Role Name
+isc dhcp server
 =========
+
+[![Build Status](https://travis-ci.org/ymajik/ansible-role-isc-dhcp.svg)](https://travis-ci.org/ymajik/ansible-role-isc-dhcp)
 
 An Ansible role to install/configure isc-dhcp server(s) https://www.isc.org/downloads/dhcp/ (Configurable options...failover and load balancing ready)
 
-[![Build Status](https://travis-ci.org/ymajik/ansible-role-isc-dhcp.svg)](https://travis-ci.org/ymajik/ansible-role-isc-dhcp)
 
 Requirements
 ------------
 For failover define the following vars to fit your deployment...
 ````
 isc_dhcp_failover_info:
-  failover_address: '{{ ansible_eth1.ipv4.address }}' #ansible_default_ipv4.address|ansible_enp0s8.ipv4.address #defines failover address for dhcp failover setup
+  failover_address: '{{ ansible_default_ipv4.address }}' #ansible_eth1.ipv4.address|ansible_enp0s8.ipv4.address #defines failover address for dhcp failover setup
   failover_group: 'dhcp-nodes'  #define Ansible inventory group that nodes belong to
   primary: 'node0'  #define the node in which should be considered the primary
   secondary: 'node1'  #define the node in which should be considered the secondary
