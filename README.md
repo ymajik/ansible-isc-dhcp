@@ -3,7 +3,7 @@ Role Name
 
 An Ansible role to install/configure isc-dhcp server(s) https://www.isc.org/downloads/dhcp/ (Configurable options...failover and load balancing ready)
 
-[![Build Status](https://travis-ci.org/mrlesmithjr/ansible-isc-dhcp.svg)](https://travis-ci.org/mrlesmithjr/ansible-isc-dhcp)
+[![Build Status](https://travis-ci.org/ymajik/ansible-role-isc-dhcp.svg)](https://travis-ci.org/ymajik/ansible-role-isc-dhcp)
 
 Requirements
 ------------
