@@ -1,5 +1,5 @@
 ---
-# defaults file for ansible-isc-dhcp
+# defaults file for ansible-role-isc-dhcp
 config_dhcp: true  #defines if dhcp should be configured
 enable_dhcp: true  #defines if dhcp should be enabled or not
 enable_dhcp_failover: false  #defines if dhcp load balancing and failover should be configured between dhcp servers

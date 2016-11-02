@@ -22,7 +22,7 @@ Role Variables
 
 ````
 ---
-# defaults file for ansible-isc-dhcp
+# defaults file for ansible-role-isc-dhcp
 enable_dhcp: true  #defines if dhcp should be enabled or not
 enable_dhcp_failover: false  #defines if dhcp load balancing and failover should be configured between dhcp servers
 enable_pxe_boot: false  #defines if TFTP/PXE boot options should be enabled
@@ -94,7 +94,7 @@ Example Playbook
   become: true
   vars:
   roles:
-    - role: ansible-isc-dhcp
+    - role: ansible-role-isc-dhcp
   tasks:
 ````
 
